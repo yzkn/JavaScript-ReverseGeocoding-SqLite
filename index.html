@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ジオコーディング／逆ジオコーディング</title>
+</head>
+
+<body>
+    <script src="sql-wasm.js"></script>
+    <script src="geocoding.js"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', async (event) => {
+            // console.log('Geocoding', await geocodingLite('東京都千代田区千代田'));
+            console.log('ReverseGeocoding', await reverseGeocodingLite(35.681236, 139.767125));
+        });
+    </script>
+</body>
+
+</html><!-- Copyright (c) 2024 YA-androidapp(https://github.com/yzkn) All rights reserved. -->
